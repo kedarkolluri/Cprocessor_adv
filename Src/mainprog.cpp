@@ -183,11 +183,11 @@ int collate_volumes2()
 				init_cu_volume__ = volume_cu__;
 				init_total_volume = volume_total;
 			}
-			printf("%d %d %12.8lf %12.8lf %12.8 lf %12.8lf %12.8lf %12.8lf %12.8lf %12.8lf %12.8lf %12.8lf %12.8lf \n",j,i,volume_cu,volume_nb,volume_cu__,volume_total,volume_diff_cu, volume_diff_nb,volume_diff_cu__,volume_cu-init_cu_volume,volume_nb-init_nb_volume,volume_cu__-init_cu_volume__,volume_total-init_total_volume);
+			printf("%d %d %12.8lf %12.8lf %12.8lf %12.8lf %12.8lf %12.8lf %12.8lf %12.8lf %12.8lf %12.8lf %12.8lf \n",j,i,volume_cu,volume_nb,volume_cu__,volume_total,volume_diff_cu, volume_diff_nb,volume_diff_cu__,volume_cu-init_cu_volume,volume_nb-init_nb_volume,volume_cu__-init_cu_volume__,volume_total-init_total_volume);
 
 		}
 	}
-
+	return 0;
 }
 
 
@@ -328,6 +328,8 @@ int collate_volumes()
 
 		}
 	}
+
+	return 0;
 
 }
 
@@ -523,7 +525,7 @@ int find_data_for_rings2(int pp)
 	}
 	*/
 
-
+	return 0;
 }
 
 int find_data_for_rings(int pp)
@@ -612,7 +614,7 @@ int find_data_for_rings(int pp)
 	cout <<sqrt((Cu_r[0]-Nb_r[0])*(Cu_r[0]-Nb_r[0])+(Cu_r[1]-Nb_r[1])*(Cu_r[1]-Nb_r[1]))<<"\n";
 	cout <<"\n*************************************************\n";
 
-
+	return 0;
 }
 
 int temp_cout_neighbors(double H1[3][3])
@@ -669,7 +671,7 @@ int temp_cout_neighbors(double H1[3][3])
 			}
 		}
 	cout <<"\n\n\n\n\n\n";
-
+	return 0;
 }
 
 
@@ -811,7 +813,7 @@ double compute_center_of_mass( double *x_cm,double *y_cm,double *z_cm, int atom_
 
 
 	*x_cm = *x_cm/tot_mass;*y_cm=*y_cm/tot_mass;*z_cm=*z_cm/tot_mass;
-
+	return 0.0;
 }
 
 
@@ -1227,7 +1229,7 @@ void save_additional_color(int pp, atomic_dat *atom_now, int n_now)
 			fprintf(fptr,"%lf %lf %lf\n",-1.0,-1.0,-1.0);
 		}else
 		{
-			if((atom[i].type==2))
+			if(atom[i].type==2)
 			{
 				fprintf(fptr,"%lf %lf %lf\n",-1.0,-1.0,-1.0);
 			}else
@@ -1240,10 +1242,10 @@ void save_additional_color(int pp, atomic_dat *atom_now, int n_now)
 					}else if((atom[i].CNA==1)||(atom[i].CNA==2))
 					{
 						fprintf(fptr,"%lf %lf %lf\n",0.0,0.250,0.250);
-					}else if((atom[i].CNA==8))
+					}else if(atom[i].CNA==8)
 					{
 						fprintf(fptr,"%lf %lf %lf\n",0.0,0.750,1.00);
-					}else if((atom[i].CNA==9))
+					}else if(atom[i].CNA==9)
 					{
 						fprintf(fptr,"%lf %lf %lf\n",0.0,0.0,0.0);
 					}else
@@ -1484,6 +1486,7 @@ int seq_just_atomeye()
 
 		}
 	}
+	return 0;
 }
 
 void save_atom_indices(int num)
@@ -2452,6 +2455,7 @@ int trigger_MSD()
 	cout << "interface atoms are\t"<<interface_atoms<<"\n";
 
 	msd_interface_atoms();
+	return 0;
 }
 
 

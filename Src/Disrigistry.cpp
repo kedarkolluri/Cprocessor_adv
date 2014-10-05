@@ -267,7 +267,7 @@ void compute_diff_ten(double **diff_ten,int rows,int columns )
 			atom[i].delr[0] = atom[i].delr[1]=atom[i].delr[2]=atom[i].delr[3]=0.0;
 		//	atom[i].delr[0] = r*1.0;
 
-			if((r==0))
+			if(r==0)
 			{
 
 				for(int h=0;h<dimension_t-1;h++)
@@ -1072,7 +1072,7 @@ void compute_disregistry_2(atomic_dat *atom_now, int n_now, double H_now[3][3])
 							sij_mean[0]+=sij_now[0];
 							sij_mean[1]+=sij_now[1];
 							sij_mean[2]+=sij_now[2];
-							fprintf(fptr,"%d %d %d %d %lf %lf %lf %lf %lf %lf %lf\n",i,corr_vect[i_here],atom[i].type,atom[corr_vect[i_here]].type,rmid_now[0],rmid_now[1],rmid_now[2],dx,dy,dz);
+							fprintf(fptr,"%d %d %d %d %lf %lf %lf %lf %lf %lf %lf \n", i,corr_vect[i_here],atom[i].type,atom[corr_vect[i_here]].type,rmid_now[0],rmid_now[1],rmid_now[2],dx,dy,dz);
 						}
 					}
 				}
@@ -1413,7 +1413,7 @@ int load_ref_vectors(char *ref_vector_file)
 		fclose(fptr);
 	}
 
-
+	return 0;
 }
 
 void find_3_atoms(atomic_dat *atom_now, int n_now, double H_now[3][3],int *ref_list_p,int ref_a_list[6])
