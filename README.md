@@ -4,8 +4,11 @@ This code postprocesses data obtained from MD simulations. This is most optimal 
 
 
 This code has been used in extracting information from MD trajectories of
+
 1.  Point defect structure and transport in Cu-Nb, Cu-V, Ag-V, Cu-Mo
+
 2.  Point defect structure and transport of MgO grain boundaries
+
 This code has been used to identify interface structures for fcc-bcc metal interfaces  without a reference state
 
 
