@@ -2,11 +2,12 @@ Cprocessor_adv
 ==============
 This code postprocesses data obtained from MD simulations. This is most optimal for analyzing interface structure and mass transport at interfaces.
 
-This code has been used to identify interface structures for fcc-bcc metal interfaces  without a reference state
 
 This code has been used in extracting information from MD trajectories of
-1. Point defect structure and transport in Cu-Nb, Cu-V, Ag-V, Cu-Mo
-2. Point defect structure and transport of MgO grain boundaries
+1.  Point defect structure and transport in Cu-Nb, Cu-V, Ag-V, Cu-Mo
+2.  Point defect structure and transport of MgO grain boundaries
+This code has been used to identify interface structures for fcc-bcc metal interfaces  without a reference state
+
 
 The above activities are analogous to identifying features in AI problems. Unlike bulk properties of materials, interface properties of materials are not understood well -- so we don't know what "features" effect the performance of materials with materials.
 
