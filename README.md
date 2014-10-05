@@ -11,7 +11,7 @@ This code has been used in extracting information from MD trajectories of
 
 This code has been used to identify interface structures for fcc-bcc metal interfaces  without a reference state
 
-Please see [some talks (on speakerdeck)] (http://bit.ly/kedar-talks-speakerdeck) and [publications list (google scholar)] (http://bit.ly/Kedar-google-scholar-main) 
+Please see [some talks (speakerdeck)] (http://bit.ly/kedar-talks-speakerdeck) and [publications list (google scholar)] (http://bit.ly/Kedar-google-scholar-main) 
 
 Above activities are analogous to identifying features in AI problems. Unlike bulk properties of materials, interface properties of materials are not understood well -- so we don't know what "features" effect the performance of materials with materials.
 
